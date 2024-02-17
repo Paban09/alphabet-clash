@@ -81,25 +81,25 @@
                 <!-- life score-->
                 <div class="w-3/4 flex justify-between">
                     <button class="btn rounded-full bg-purple-500 text-white">
-                        Life <i class="fa-solid fa-heart-circle-bolt"></i> 
-                        <span>1</span>
+                        Life : <i class="fa-solid fa-heart-circle-bolt"></i> 
+                        <span id="life">3</span>
                     </button>
                     <button class="btn rounded-full  bg-purple-500 text-white">
-                        Score <i class="fa-solid fa-dollar-sign"></i> 
-                        <span>1</span>
+                        Score : <i class="fa-solid fa-dollar-sign"></i> 
+                        <span id="score">0</span>
                     </button>
                 </div>
             </div>
         </section>
 
         <!-- score  -->
-        <section class="hidden score flex flex-col justify-center items-center min-h-screen">
+        <section id="score-view" class="hidden score flex flex-col justify-center items-center min-h-screen">
             <div class="text-white text-center space-y-8 max-w-fit p-8 rounded-3xl bg-[#FFFFFF33]">
                 <h1 class="text-8xl">
                     <span class="font-extrabold">Score :</span>
-                    <span>14</span>
+                    <span id="final-score">0</span>
                 </h1>
-                <button class="btn">Play Again</button>
+                <button onclick="reset()" class="btn">Play Again</button>
                 <p>practice make you a pro</p>
             </div>
         </section>
